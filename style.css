@@ -1,0 +1,173 @@
+/* CSS Reset */
+*{
+    margin:0px;
+    padding:0px;
+}
+
+/* CSS var */
+:root
+{
+     --navbar-height:59px;
+}
+/* Navigation Bar */
+#navbar
+{
+    display:flex;
+    align-items:center;
+}
+/* Nav: logo and img */
+#logo
+{
+    margin:10px 34px;
+}
+#logo img
+{
+    height:80px;
+    margin: -9px ;
+    border-radius: 50%;
+}
+
+/* Navbar list */
+#navbar
+{
+    position: relative;
+}
+#navbar ul
+{
+    display:flex;
+}
+#navbar::before
+{
+    content:"";
+    background-color:black;
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity: 0.95;
+}
+#navbar ul li
+{
+    list-style: none;
+    font-size: 20px;
+}
+
+#navbar ul li a
+{
+    color: white;
+    display:block;
+    padding:3px 25px;
+    border-radius:20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover
+{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home
+{
+    display:flex;
+    flex-direction: column;
+    padding: 3px 150px;
+    height:450px;
+    justify-content:center;
+    align-items: center;
+}
+
+#home::before
+{
+    content:"";
+    position: absolute;
+    background:url('./img/bg1.jpg') no-repeat center center/cover;
+    height:230%;
+    width:100%;
+    z-index:-1;
+    opacity: 0.89;
+}
+
+
+#home h1
+{
+    font-size: 30px;
+    color:rgb(255, 255, 255);
+    background:rgba(125, 121, 121, 0.7);
+    text-align: center;
+}
+
+#home p
+{
+    color:white;
+    background:rgba(136, 128, 128, 0.7);
+    text-align: center;
+    font-size: 1.2rem;
+    max-height: 350px;
+    
+}
+.heading1
+{
+    font-size: larger;
+}
+/* Utility  Classes */
+.h-primary-center
+{
+    font-size:2.8rem;
+    padding:12px;
+    text-align: center;
+    color:white;
+}
+#title
+{
+    display:flex;
+    flex-direction: column;
+    padding: 0px 150px;
+    height:0px;
+    justify-content:center;
+    align-items: center;
+}
+#title h1
+{
+    font-size: 30px;
+    color:rgb(255, 255, 255);
+    background:rgba(125, 121, 121, 0.7);
+    text-align: center;
+}
+
+/* Cake container css */
+.cake-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 20px auto;
+    opacity:0.90;
+  }
+
+  .cake {
+    text-align: center;
+    margin: 15px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 250px;
+  }
+
+  .cake img {
+    width: 250px;
+    height:350px;
+    border-radius: 5px;
+  }
+
+  .cake h3 {
+    margin-top: 10px;
+    color: #333;
+  }
+
+  .cake p {
+    color: #666;
+    font-size: 14px;
+  }
+

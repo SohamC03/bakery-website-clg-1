@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wonka's Bakery</title>
+  <style>
+     #navbar
+{
+    display:flex;
+    align-items:center;
+}
+/* Nav: logo and img */
+#logo
+{
+    margin:10px 34px;
+}
+#logo img
+{
+    height:80px;
+    margin: -9px ;
+    border-radius: 50%;
+}
+
+/* Navbar list */
+#navbar
+{
+    position: relative;
+}
+#navbar ul
+{
+    display:flex;
+}
+#navbar::before
+{
+    content:"";
+    background-color:black;
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity: 0.4;
+}
+#navbar ul li
+{
+    list-style: none;
+    font-size: 20px;
+}
+
+#navbar ul li a
+{
+    color: white;
+    display:block;
+    padding:3px 25px;
+    border-radius:20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover
+{
+    color: black;
+    background-color: white;
+}
+#navbar p
+{
+    font-size: 50px;
+    padding-left: 20%;
+    color:white;
+    
+}
+
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 0;
+      background: url("./img/bg1.jpg") no-repeat center center/cover;
+    }
+
+    /* Updated Navbar styles for "Contact Us" */
+    #navbar p {
+      font-size: 50px;
+      padding-left: 20%;
+      color: white;
+    }
+
+    .contact-container {
+      text-align: center;
+      margin: 50px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      opacity:0.80;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    form label,
+    form input,
+    form textarea,
+    form button {
+      margin: 10px;
+    }
+
+    form button {
+      background-color: #ff4500;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="./img/logo2.jpg" alt="WONKA">
+        </div>
+        <ul>
+        <li class="item"><a href="index.html">Home</a></li>
+        <li class="item"><a href="services.html">Products</a></li>
+        <li class="item"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+  <div class="cake-container">
+    <!-- ... -->
+
+    <!-- Contact Us Section -->
+    <div class="contact-container">
+      <h1>Contact Us</h1>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="review">Customer Review:</label>
+        <textarea id="review" name="review" rows="4" required></textarea>
+
+        <!-- Add any other relevant form inputs here... -->
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

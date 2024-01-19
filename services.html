@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wonka's Bakery</title>
+  <style>
+    body {
+      font-family:'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 0;
+      background:url("./img/bg1.jpg") no-repeat center center/cover;
+      
+    }
+
+    header {
+      background-color: rgb(196, 179, 179);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      opacity:0.95;
+    }
+    #navbar
+{
+    display:flex;
+    align-items:center;
+}
+/* Nav: logo and img */
+#logo
+{
+    margin:10px 34px;
+}
+#logo img
+{
+    height:80px;
+    margin: -9px ;
+    border-radius: 50%;
+}
+
+/* Navbar list */
+#navbar
+{
+    position: relative;
+}
+#navbar ul
+{
+    display:flex;
+}
+#navbar::before
+{
+    content:"";
+    background-color:black;
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity: 0.4;
+}
+#navbar ul li
+{
+    list-style: none;
+    font-size: 20px;
+}
+
+#navbar ul li a
+{
+    color: white;
+    display:block;
+    padding:3px 25px;
+    border-radius:20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover
+{
+    color: black;
+    background-color: white;
+}
+#navbar p
+{
+    font-size: 50px;
+    padding-left: 20%;
+    color:white;
+    
+}
+
+    .cake-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 20px auto;
+      opacity:0.90;
+    }
+
+    .cake {
+      text-align: center;
+      margin: 15px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      width: 250px;
+    }
+
+    .cake img {
+      width: 250px;
+      height:350px;
+      border-radius: 5px;
+    }
+
+    .cake h3 {
+      margin-top: 10px;
+      color: #333;
+    }
+
+    .cake p {
+      color: #666;
+      font-size: 14px;
+    }
+
+    .cake span {
+      display: block;
+      margin-top: 15px;
+      color: #ff4500;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+ <nav id="navbar">
+    <div id="logo">
+        <img src="./img/logo2.jpg" alt="WONKA">
+    </div>
+    <p>Wonka's Bakery Collection</p>
+    </nav>
+  <div class="cake-container">
+    <div class="cake">
+      <img src="./img/food1.jpg" alt="Cake 1">
+      <h3>Wallnut Fantasy</h3>
+      <p>Indulge in layers of rich chocolate bliss, crafted to perfection.</p>
+      <span>₹170</span>
+    </div>
+
+    <div class="cake">
+      <img src="./img/food2 (2).jpg" alt="Cake 2">
+      <h3>Raspberry Dream Delight</h3>
+      <p>A symphony of flavors featuring fresh raspberries and velvety cream.</p>
+      <span>₹150</span>
+    </div>
+
+    <div class="cake">
+      <img src="./img/food3.jpg" alt="Cake 3">
+      <h3>Truffle Crunch Sensation</h3>
+      <p>Experience the delightful crunch of caramel in every bite.</p>
+      <span>₹170</span>
+    </div>
+
+    <div class="cake">
+        <img src="./img/food4.jpg" alt="Cake 4">
+        <h3>Snow White Sensation</h3>
+        <p>Experience the delightful snow in every bite.</p>
+        <span>₹700</span>
+    </div>
+
+    <div class="cake">
+        <img src="./img/food5.jpg" alt="Cake 5">
+        <h3>Caramel Drop Sensation</h3>
+        <p>Experience the delightful crunch of caramel and cream.</p>
+        <span>₹800</span>
+    </div>
+
+    <div class="cake">
+        <img src="./img/food6.jpg" alt="Cake 6">
+        <h3>Red Velvet Sensation</h3>
+        <p>Experience the delightful velvet.</p>
+        <span>₹1000</span>
+    </div>
+  </div>
+
+</body>
+</html>
